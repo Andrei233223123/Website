@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: linear-gradient(45deg,oklch(0.94 0.03 254.56), oklch(0.97 0.02 0.3));
+}
+
+main {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title img{
+    background:oklch(42.4% .199 265.638);
+    padding: 20px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    height: 682px;
+    width: 448px;
+}
+
+.container {
+    line-height: 1.5;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    height: auto;
+}
+
+.card-header {
+    display: block;
+    padding: 24px 24px 0;
+
+}
+
+.card-header h3 {
+    font-weight: 500;
+}
+
+.card-header p {
+    color: #888687;
+    font-weight: 100;
+}
+
+.card-content {
+    display: block;
+    padding: 20px 20px 0;
+    margin-bottom: 10px;
+}
+
+form{
+    display: grid;
+    gap: 10px;
+}
+
+.email {
+    display: grid;
+    gap: 5px;
+}
+
+.email label {
+    font-weight: 500;
+}
+
+.email-form input {
+    border-radius: 5px;
+    height: 25px;
+    width: 85%;
+    background: #f3f3f5;
+    padding: 4px 12px 4px 40px;
+    font-size: 1rem;
+    font-weight: normal;
+    border-color: white;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.email-form input:focus {
+    box-shadow: 0px 0px 0px 2px black;
+    outline: none;
+}
+
+.email-form span {
+    position: absolute;
+    padding: 10px 15px;
+}
+
+.password {
+    display: grid;
+    gap: 5px;
+}
+
+.password label {
+    font-weight: 500;
+}
+
+.password-form input {
+    border-radius: 5px;
+    height: 25px;
+    width: 85%;
+    background: #f3f3f5;
+    padding: 4px 12px 4px 40px;
+    font-size: 1rem;
+    font-weight: normal;
+    border-color: white;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.password-form input:focus {
+    box-shadow: 0px 0px 0px 2px black;
+    outline: none;
+}
+
+.password-form img {
+    position: absolute;
+    padding: 8px 15px;
+}
+
+.user_is_correct{
+    display: none;
+    
+}
+
+
+.user_is_correct.active{
+    display: inline;
+    margin: 10px 0;
+    padding: 5px 0;
+    background: rgb(224, 70, 70);
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_is_correct img{
+    position: relative;
+    left: 3px;
+    top: 3px;
+    margin-right: 70px;
+    margin-left: 10px;
+}
+
+.user_is_correct span{
+    position: absolute;
+    margin: 2px auto;
+}
+
+
+.submit-button{
+    font-size: 14px;
+    width: auto;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.break-line{
+    background: rgb(163, 161, 161);
+    width: 90%;
+    height: 0.5px;
+    margin: 0px 20px;
+}
+
+.card-credentials{
+    display: grid;
+    padding: 20px 20px;
+    
+}
+
+.card-credentials>p{
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.card-admin{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    background: #eff6ff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(173, 173, 223);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.account{
+    font-size: 0.8rem;
+}
+
+.card-user-content{
+    font-size: 0.8rem;
+}
+
+.card-mechanic{
+    display: flex;
+    background: oklch(0.982 0.018 155.826);
+    gap: 10px;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(188, 240, 228);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.card-admin .card-type{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.card-mechanic .card-type{
+    background-color: rgb(235, 229, 229);
+    color: rgb(235, 229, 229);
+    border-radius: 15px;
+}
+
+.card-mechanic .card-type div{
+   color: black;
+}
+
+.card-type{
+    font-size: 14px;
+    display: block;
+    border-style: solid ;
+    width: auto;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 5px;
+}
+
+.card-type div{
+    position: relative;
+    top: -3px;
+}
+
+@media (min-width: 350px) and (max-width: 600px){
+    
+    body,html{
+        height: 100vh;
+        
+    }
+    
+    main{
+        height: 100%;
+        margin: 10px 10px;
+    }
+
+    section{
+       width: 90%;
+       font-size: 10px;
+    }
+    
+    .email-form input{
+        height: auto;
+        font-size: 12px;
+    }
+
+    .password-form input{
+        height: auto;
+        font-size: 12px;
+    }
+
+    .password-form img{
+        width: 12px;
+    }
+
+    .submit-button{
+        width: auto;
+    }
+    
+    .card-credentials div div{
+        font-size: 10px;
+    }
+    
+   
+}
