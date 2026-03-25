@@ -156,7 +156,7 @@
                             </div>
                         </section>
 
-                        <section class="card-comp">
+                        <section class="card-comp" id="card-comp">
                             <div class="pending-service" id="pending-services">
                                 <div class="service-header-1">
                                     <div>
@@ -179,6 +179,38 @@
                                             Pending
                                         </div>
                                     </div>
+                                    
+                                </div>
+
+                                 <div class="service-comp" id="service-card">
+                                    <div class="service-comp-1" id="services">
+                                        <h3><span id="user-name">John Ramirez</span></h3>
+                                        <p id="description">Oil Change And Inspection</p>
+                                    </div>
+                                    <div>
+                                        <span class="date" id="date-today">
+                                            2026-03-18
+                                        </span>
+                                        <div class="Status" id="status">
+                                            Pending
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                 <div class="service-comp" id="service-card">
+                                    <div class="service-comp-1" id="services">
+                                        <h3><span id="user-name">John Ramirez</span></h3>
+                                        <p id="description">Oil Change And Inspection</p>
+                                    </div>
+                                    <div>
+                                        <span class="date" id="date-today">
+                                            2026-03-18
+                                        </span>
+                                        <div class="Status" id="status">
+                                            Pending
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
 
@@ -218,6 +250,30 @@
                                 </div>
 
                                 <div class="ai-comp" id="ai-card">
+                                    <div class="ai-comp-1">
+                                        <div>
+                                            <h3>
+                                                <span id="issue">Worn Brake Pads Detection</span>
+                                            </h3>
+                                            <span id="issue-time">AI system detected critically worn brake pads on customer motorcycle during last service</span>
+                                        </div>
+                                        <div class="alert-status">high</div>
+                                    </div>
+                                </div>
+
+                                 <div class="ai-comp" id="ai-card">
+                                    <div class="ai-comp-1">
+                                        <div>
+                                            <h3>
+                                                <span id="issue">Worn Brake Pads Detection</span>
+                                            </h3>
+                                            <span id="issue-time">AI system detected critically worn brake pads on customer motorcycle during last service</span>
+                                        </div>
+                                        <div class="alert-status">high</div>
+                                    </div>
+                                </div>
+
+                                 <div class="ai-comp" id="ai-card">
                                     <div class="ai-comp-1">
                                         <div>
                                             <h3>

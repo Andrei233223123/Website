@@ -261,12 +261,13 @@ main {
 .card-1>div {
     border-style: solid;
     display: flex;
+    flex-grow: 1;
     border-width: 1px;
     border-color: rgb(226, 218, 218);
     padding: 20px;
     gap: 10px;
     border-radius: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     transition: all 0.3s;
     cursor: pointer;
@@ -317,8 +318,9 @@ main {
 
 .card-comp {
     display: grid;
-    grid-template-columns: repeat(2, max(79.5vh));
+    grid-template-columns: repeat(2, minmax(41vh,41vw));
     gap: 20px;
+    overflow: auto;
 }
 
 .card-comp>div {
@@ -330,7 +332,9 @@ main {
     border-radius: 10px;
     border-color: rgb(226, 218, 218);
     padding: 20px;
-
+    height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .card-comp div:has(> img) {
