@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,70 +18,74 @@
 </head>
 
 <body>
-
+    
     <div class="px1">
-        <div class="aside" id="navigation">
-            <aside class="navigation">
-                <div class="title">
-                    <div>
-                        <img src="../IMAGE/Service2.png" alt="Service">
-                        <h2>U-MES</h2>
+        <div class="px3">
+            <div class="aside" id="navigation">
+                <aside class="navigation">
+                    <div class="title">
+                        <div>
+                            <img src="../IMAGE/Service2.png" alt="Service">
+                            <h2>U-MES</h2>
+                        </div>
                     </div>
-                </div>
 
-                <div class="break-line"></div>
+                    <div class="break-line"></div>
 
-                <nav class="nav-component" id="nav">
-                    <div class="px-1" id="dashboard">
-                        <img src="../IMAGE/Dashboard.png" alt="Dashboard">
-                        <h3>Dashboard</h3>
-                    </div>
-                    <div class="px-2" id="customer">
-                        <img src="../IMAGE/Customer.png" alt="Customer">
-                        <h3>Customers</h3>
-                    </div>
-                    <div class="px-3" id="service">
-                        <img src="../IMAGE/Service.png" alt="Services">
-                        <h3>Services</h3>
-                    </div>
-                    <div class="px-4" id="inventory">
-                        <img src="../IMAGE/Inventory.png" alt="Inventory">
-                        <h3>Inventory</h3>
-                    </div>
-                    <div class="px-5" id="catalog">
-                        <img src="../IMAGE/Catalog.png" alt="Catalog">
-                        <h3>Catalog</h3>
-                    </div>
-                    <div class="px-6" id="alerts">
-                        <img src="../IMAGE/Alert.png" alt="Safety">
-                        <h3>Safety</h3>
-                        <img src="../IMAGE/Alert2.png" alt="" style="padding-top: 3px;" class="alert">
-                    </div>
-                    <div class="px-7" id="messages">
-                        <img src="../IMAGE/Message.png" alt="Message">
-                        <h3>Messages</h3>
-                    </div>
-                </nav>
+                    <nav class="nav-component" id="nav">
+                        <div class="em" id="dashboard">
+                            <img src="../IMAGE/Dashboard.png" alt="Dashboard">
+                            <h3>Dashboard</h3>
+                        </div>
+                        <div class="px-2" id="customer">
+                            <img src="../IMAGE/Customer.png" alt="Customer">
+                            <h3>Customers</h3>
+                        </div>
+                        <div class="px-3" id="service">
+                            <img src="../IMAGE/Service.png" alt="Services">
+                            <h3>Services</h3>
+                        </div>
+                        <div class="px-4" id="inventory">
+                            <img src="../IMAGE/Inventory.png" alt="Inventory">
+                            <h3>Inventory</h3>
+                        </div>
+                        <div class="px-5" id="catalog">
+                            <img src="../IMAGE/Catalog.png" alt="Catalog">
+                            <h3>Catalog</h3>
+                        </div>
+                        <div class="px-6" id="alerts">
+                            <img src="../IMAGE/Alert.png" alt="Safety">
+                            <h3>Safety</h3>
+                            <img src="../IMAGE/Alert2.png" alt="" style="padding-top: 3px;" class="alert">
+                        </div>
+                        <div class="px-7" id="messages">
+                            <img src="../IMAGE/Message.png" alt="Message">
+                            <h3>Messages</h3>
+                        </div>
+                    </nav>
 
-                <div class="break-line"></div>
+                    <div class="break-line"></div>
 
-                <div class="user_profile">
-                    <div class="user-round" id="avatar">
-                        <span>AD</span>
+                    <div class="user_profile">
+                        <div class="user-round" id="avatar">
+                            <span>AD</span>
+                        </div>
+                        <div>
+                            <h4 id="user">Admin User</h4>
+                            <p id="email" style="font-size: small;">admin@motoadmin.com</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 id="user">Admin User</h4>
-                        <p id="email" style="font-size: small;">admin@motoadmin.com</p>
+
+                    <div class="sign-out-button" id="logout">
+                        <img src="../IMAGE/Sign-out.png" alt="out" height="24px" width="24px">
+                        <h4 style="font-weight: 400;">Logout</h4>
                     </div>
-                </div>
 
-                <div class="sign-out-button">
-                    <img src="../IMAGE/Sign-out.png" alt="out" height="24px" width="24px">
-                    <h4 style="font-weight: 400;">Logout</h4>
-                </div>
+                </aside>
+            </div>
 
-            </aside>
         </div>
+
 
         <div class="px2">
 
@@ -179,10 +185,10 @@
                                             Pending
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
-                                 <div class="service-comp" id="service-card">
+                                <div class="service-comp" id="service-card">
                                     <div class="service-comp-1" id="services">
                                         <h3><span id="user-name">John Ramirez</span></h3>
                                         <p id="description">Oil Change And Inspection</p>
@@ -195,9 +201,9 @@
                                             Pending
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                 <div class="service-comp" id="service-card">
+                                <div class="service-comp" id="service-card">
                                     <div class="service-comp-1" id="services">
                                         <h3><span id="user-name">John Ramirez</span></h3>
                                         <p id="description">Oil Change And Inspection</p>
@@ -210,7 +216,7 @@
                                             Pending
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -261,7 +267,7 @@
                                     </div>
                                 </div>
 
-                                 <div class="ai-comp" id="ai-card">
+                                <div class="ai-comp" id="ai-card">
                                     <div class="ai-comp-1">
                                         <div>
                                             <h3>
@@ -273,7 +279,7 @@
                                     </div>
                                 </div>
 
-                                 <div class="ai-comp" id="ai-card">
+                                <div class="ai-comp" id="ai-card">
                                     <div class="ai-comp-1">
                                         <div>
                                             <h3>
@@ -315,19 +321,8 @@
                 </main>
             </div>
 
-
-
-
         </div>
     </div>
-
-
-
-
-
-
-
-
 
     <script src="./home-page.js"></script>
 </body>

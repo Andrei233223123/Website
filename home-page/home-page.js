@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function (event) {
 
     const navItems = document.querySelectorAll('.nav-component > div');
@@ -31,11 +32,34 @@ document.addEventListener('DOMContentLoaded', function (event) {
     const menu = document.getElementById('hamburger');
     const hamburger = document.querySelector('.aside');
     const main = document.querySelector('.px2');
-    menu.addEventListener('click', () => {
-        hamburger.classList.add('event');
-        main.classList.add('event');
 
+    menu.addEventListener('click', () => {
+
+        if (hamburger.classList.contains('event') && main.classList.contains('event')) {
+            main.classList.remove('event');
+            hamburger.classList.remove('event');
+
+        } else {
+            main.classList.add('event');
+            hamburger.classList.add('event');
+
+        }
 
     })
+
+
+    async function getData() {
+        const response = await fetch('./home-api.php');
+        const data = await response.json();
+        const email = document.getElementById('email');
+
+        email.innerHTML = data.email;
+    }
+
+    getData();
+
+
+
+
 
 })

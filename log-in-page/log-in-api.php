@@ -1,12 +1,11 @@
 <?php
+session_start();
 header('Content-Type: application/json; charset=utf-8');
-
 
 $servername = 'localhost';
 $username = 'root';
 $password = '';
 $dbname = 'aims_db';
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
@@ -23,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        echo json_encode(['success'=> true]);
+        $_SESSION['email'] = $email;
+        echo json_encode(['success'=> true, 'email' => $email]);
         exit;
     }
     echo json_encode(['success' => false, 'error' => 'Invalid Username or Password']);

@@ -12,27 +12,40 @@ html {
 .px1 {
     display: flex;
     flex-direction: row;
-    max-width: 1920px;
+    width: 100vw;
     height: 100vh;
-    
+    overflow: hidden;
+}
+
+.px-1{
+    padding: 0;
+    margin: 0;
 }
 
 .px2 {
     display: flex;
-    margin-left: 10px;
+    margin-left: 0px;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    flex: 1;
+    width: calc(100vw - 15.3vw);
+    transition: all 0.3s ease;
     
 }
 
+.px2 >div{
+    width: 100%;
+}
+
+
+
 .aside {
-    display: block;
+    display: flex;
     line-height: 1.5;
     background: oklch(21% .034 264.665);
     color: white;
     width: 15.3vw;
     height: 100vh;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
@@ -40,6 +53,7 @@ aside{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 aside div {
@@ -74,7 +88,7 @@ aside div {
 }
 
 .break-line {
-    width: 100%;
+    width: 100vw;
     height: 1px;
     background: rgb(104, 103, 103);
     margin-bottom: 1rem;
@@ -90,12 +104,12 @@ nav div img {
 nav {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
     margin-bottom: 20vh;
-    
+    overflow: hidden;
+    padding: 0 10px;
 }
 
-nav div {
+nav > div {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
@@ -105,6 +119,8 @@ nav div {
     height: 40px;
     cursor: pointer;
     transition: all 0.3s;
+
+   
 }
 
 nav div h3 {
@@ -177,18 +193,19 @@ nav div h3 {
 
 header {
     padding-left: 10px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     border-bottom-style: solid;
     border-width: 2px;
     border-color: rgba(0, 0, 0, 0.1);
-    width: 84vw;
+    width: 100%;
 }
 
 .head-nav {
     display: flex;
     flex-direction: row;
     gap: 200px;
-    width: 80vw;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -196,7 +213,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 30px 0;
+    margin: 30px 0;
+    cursor: pointer;
 }
 
 .menu span {
@@ -235,6 +253,7 @@ header {
 
 main {
     display: flex;
+    width: 100%;
     padding-left: 5px;
 }
 
@@ -242,7 +261,7 @@ main {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-
+    flex: 1;
 }
 
 .dashboard-title {
@@ -318,7 +337,7 @@ main {
 
 .card-comp {
     display: grid;
-    grid-template-columns: repeat(2, minmax(41vh,41vw));
+    grid-template-columns: repeat(2, minmax(41vh,49vw));
     gap: 20px;
     overflow: auto;
 }
@@ -498,11 +517,15 @@ main {
 }
 
 .aside.event{
-    transform:translateX(-250px);
+    transform:translateX(-100%);
+    width: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .px2.event{
-    transform:translateX(-230px);
-    
+    width: 100vw;
+
 }
+
 

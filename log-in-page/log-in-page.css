@@ -4,9 +4,9 @@
 }
 
 body {
-    
+
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background: linear-gradient(45deg,oklch(0.94 0.03 254.56), oklch(0.97 0.02 0.3));
+    background: linear-gradient(45deg, oklch(0.94 0.03 254.56), oklch(0.97 0.02 0.3));
 }
 
 main {
@@ -15,9 +15,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}   
 
-.logo-title{
+.logo-title {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -25,13 +25,14 @@ main {
     align-items: center;
 }
 
-.logo-title img{
-    background:oklch(42.4% .199 265.638);
+.logo-title img {
+    background: oklch(42.4% .199 265.638);
     padding: 20px 20px;
     margin-top: 20px;
     border-radius: 15px;
 }
-.title{
+
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +73,7 @@ section {
     margin-bottom: 10px;
 }
 
-form{
+form {
     display: grid;
     gap: 10px;
 }
@@ -142,13 +143,14 @@ form{
     padding: 8px 15px;
 }
 
-.user_is_correct{
+.user_is_correct {
     display: none;
-    
+
+
 }
 
 
-.user_is_correct.active{
+.user_is_correct.active {
     display: inline;
     margin: 10px 0;
     padding: 5px 0;
@@ -159,7 +161,18 @@ form{
     align-items: center;
 }
 
-.user_is_correct img{
+.user_is_correct.active2 {
+    display: inline;
+    margin: 10px 0;
+    padding: 5px 0;
+    background: rgb(115, 240, 177);
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_is_correct img {
     position: relative;
     left: 3px;
     top: 3px;
@@ -167,13 +180,13 @@ form{
     margin-left: 10px;
 }
 
-.user_is_correct span{
+.user_is_correct span {
     position: absolute;
-    margin: 2px auto;
+    margin: 2px -20px;
 }
 
 
-.submit-button{
+.submit-button {
     font-size: 14px;
     width: auto;
     height: 30px;
@@ -184,26 +197,26 @@ form{
     cursor: pointer;
 }
 
-.break-line{
+.break-line {
     background: rgb(163, 161, 161);
     width: 90%;
     height: 0.5px;
     margin: 0px 20px;
 }
 
-.card-credentials{
+.card-credentials {
     display: grid;
     padding: 20px 20px;
-    
+
 }
 
-.card-credentials>p{
+.card-credentials>p {
     font-size: 0.8rem;
     font-weight: 100;
     margin-bottom: 20px;
 }
 
-.card-admin{
+.card-admin {
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -215,15 +228,15 @@ form{
     padding: 10px 10px;
 }
 
-.account{
+.account {
     font-size: 0.8rem;
 }
 
-.card-user-content{
+.card-user-content {
     font-size: 0.8rem;
 }
 
-.card-mechanic{
+.card-mechanic {
     display: flex;
     background: oklch(0.982 0.018 155.826);
     gap: 10px;
@@ -236,26 +249,26 @@ form{
     margin-top: 10px;
 }
 
-.card-admin .card-type{
+.card-admin .card-type {
     background-color: black;
     color: white;
     border-radius: 15px;
 }
 
-.card-mechanic .card-type{
+.card-mechanic .card-type {
     background-color: rgb(235, 229, 229);
     color: rgb(235, 229, 229);
     border-radius: 15px;
 }
 
-.card-mechanic .card-type div{
-   color: black;
+.card-mechanic .card-type div {
+    color: black;
 }
 
-.card-type{
+.card-type {
     font-size: 14px;
     display: block;
-    border-style: solid ;
+    border-style: solid;
     width: auto;
     height: 20px;
     align-items: center;
@@ -263,49 +276,50 @@ form{
     padding: 3px 5px;
 }
 
-.card-type div{
+.card-type div {
     position: relative;
     top: -3px;
 }
 
-@media (min-width: 350px) and (max-width: 600px){
-    
-    body,html{
+@media (min-width: 350px) and (max-width: 600px) {
+
+    body,
+    html {
         height: 100vh;
-        
+
     }
-    
-    main{
+
+    main {
         height: 100%;
         margin: 10px 10px;
     }
 
-    section{
-       width: 90%;
-       font-size: 10px;
+    section {
+        width: 90%;
+        font-size: 10px;
     }
-    
-    .email-form input{
+
+    .email-form input {
         height: auto;
         font-size: 12px;
     }
 
-    .password-form input{
+    .password-form input {
         height: auto;
         font-size: 12px;
     }
 
-    .password-form img{
+    .password-form img {
         width: 12px;
     }
 
-    .submit-button{
+    .submit-button {
         width: auto;
     }
-    
-    .card-credentials div div{
+
+    .card-credentials div div {
         font-size: 10px;
     }
-    
-   
+
+
 }

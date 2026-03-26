@@ -1,5 +1,5 @@
 <?php
-
+    
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +55,7 @@
 
                         <div class="user_is_correct">
                             <img src="./IMAGE/Invalid.png" alt="err">
-                            <span>Invalid Username or Password</span>
+                            <span id="valid">Invalid Username or Password</span>
                         </div>
 
                         <button type="submit" class="submit-button" id="form_button">Sign in</button>
